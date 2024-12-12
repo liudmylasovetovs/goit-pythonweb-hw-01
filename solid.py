@@ -48,8 +48,8 @@ class LibraryManager:
     def __init__(self, library: LibraryInterface):
         self.library = library
 
-    def add_book(self, book: Book):
-        self.library.add_book(book)
+    def add_book(self, title: str, author: str, year: str):
+        self.library.add_book(Book(title, author, year))
 
     def remove_book(self, title: str):
         self.library.remove_book(title)
